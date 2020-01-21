@@ -1,5 +1,6 @@
 package com.qaprosoft.carina.demo;
 
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
@@ -22,17 +23,16 @@ public class ProposalSubmissionTest extends AbstractTest{
 	@TestTag(name = "Squad", value = "offer_squad1")
     @TestTag(name = "test_type", value = "end-2-end")
 	@TestTag(name = "feature", value = "offers")
-	@XlsDataSourceParameters(path = "testdata/preissuance/xls/proposalsubmission.xlsx", sheet = "Calculator", dsUid = "Test_Cases", dsArgs = "firstname, lastname, emailid, mobile, type, maritalStatus, nationality, annualIncome, occupation, relationToHolder, sumAssured")
+//	@XlsDataSourceParameters(path = "testdata/preissuance/xls/proposalsubmission.xlsx", sheet = "Calculator", dsUid = "Test_Cases", dsArgs = "firstname, lastname, emailid, mobile, type, maritalStatus, nationality, annualIncome, occupation, relationToHolder, sumAssured")
+	@XlsDataSourceParameters(path = "testdata/preissuance/xls/proposalsubmission.xlsx", sheet = "Calculator", dsUid = "Test_Cases")
 	
-	public void Proposal_Submission(String firstname, String lastname, String emailid, String mobile, String type, String maritalStatus, String nationality, String annualIncome, String occupation, String relationToHolder, String sumAssured)
+	public void Proposal_Submission(HashMap<String,String>testDetails)
 	{	
 		System.out.println(System.currentTimeMillis());
 		POSTProposalSubmission proposubmit = new POSTProposalSubmission();
 		Response rs = proposubmit.callAPI();
 		long rsTime = rs.timeIn(TimeUnit.MILLISECONDS);
-		System.out.println("Response time: " + rsTime);
-		
-		
+		System.out.println("Response time: " + rsTime);		
 		
 	}
 

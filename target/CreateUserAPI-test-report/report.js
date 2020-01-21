@@ -54,28 +54,28 @@ formatter.match({
   "location": "CreateUserAPIStepdef.startMethod()"
 });
 formatter.result({
-  "duration": 616742198,
+  "duration": 2730410727,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateUserAPIStepdef.enterdetails()"
 });
 formatter.result({
-  "duration": 8684468,
+  "duration": 31696162,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateUserAPIStepdef.postAPI()"
 });
 formatter.result({
-  "duration": 2248625928,
+  "duration": 5043831394,
   "status": "passed"
 });
 formatter.match({
   "location": "CreateUserAPIStepdef.getResponseTime()"
 });
 formatter.result({
-  "duration": 2603182,
+  "duration": 16546476,
   "status": "passed"
 });
 });
