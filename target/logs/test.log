@@ -1,4 +1,4 @@
-2020-01-21 14:44:44 CarinaListener [INFO] 
+2020-01-22 12:30:13 CarinaListener [INFO] 
 ============= Test configuration =============
 url=https://www.gsmarena.com
 env=DEMO
@@ -118,705 +118,10 @@ capabilities.platformName=ANDROID
 capabilities.deviceType=phone
 ================================================
 
-2020-01-21 14:44:45 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-21 14:44:45 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-21 14:44:45 Messager [INFO]  TEST [Default test - testCompareModels] STARTED at [14:44:45 2020-01-21]
-2020-01-21 14:44:49 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.WebSampleTest.testCompareModels(WebSampleTest.java:81)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 42 more
-2020-01-21 14:44:49 Messager [ERROR]  TEST [Default test - testCompareModels] FAILED at [14:44:49 2020-01-21] - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-java.util.Optional.orElseGet(Unknown Source)
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-com.qaprosoft.carina.demo.WebSampleTest.testCompareModels(WebSampleTest.java:81)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:44:53 Messager [INFO]  TEST [GSMA0001 - Default test - testModelSpecs] STARTED at [14:44:53 2020-01-21]
-2020-01-21 14:44:55 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 42 more
-2020-01-21 14:44:55 Messager [ERROR]  TEST [GSMA0001 - Default test - testModelSpecs] FAILED at [14:44:55 2020-01-21] - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-java.util.Optional.orElseGet(Unknown Source)
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:44:55 Messager [INFO]  TEST [GSMA0002 - Default test - testModelSpecs] STARTED at [14:44:55 2020-01-21]
-2020-01-21 14:44:57 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 42 more
-2020-01-21 14:44:57 Messager [ERROR]  TEST [GSMA0002 - Default test - testModelSpecs] FAILED at [14:44:57 2020-01-21] - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-java.util.Optional.orElseGet(Unknown Source)
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:44:57 Messager [INFO]  TEST [GSMA0003 - Default test - testModelSpecs] STARTED at [14:44:57 2020-01-21]
-2020-01-21 14:44:59 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 42 more
-2020-01-21 14:44:59 Messager [ERROR]  TEST [GSMA0003 - Default test - testModelSpecs] FAILED at [14:44:59 2020-01-21] - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-java.util.Optional.orElseGet(Unknown Source)
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:55)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:44:59 Messager [INFO]  TEST [Default test - testNewsSearch] STARTED at [14:44:59 2020-01-21]
-2020-01-21 14:45:02 IDriverPool [ERROR] Driver initialization 'default' FAILED! Retry 1 of 1 time - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-org.openqa.selenium.WebDriverException: Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-	at java.util.Optional.orElseGet(Unknown Source)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-	at com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-	at com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-	at com.qaprosoft.carina.demo.WebSampleTest.testNewsSearch(WebSampleTest.java:99)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
-	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
-	at java.net.PlainSocketImpl.connect(Unknown Source)
-	at java.net.SocksSocketImpl.connect(Unknown Source)
-	at java.net.Socket.connect(Unknown Source)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:150)
-	... 42 more
-2020-01-21 14:45:02 Messager [ERROR]  TEST [Default test - testNewsSearch] FAILED at [14:45:02 2020-01-21] - Connection refused: connect
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'QKNBK189', ip: '10.0.6.82', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_231'
-Driver info: driver.version: AndroidDriver
-
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.lambda$execute$2(EventFiringAppiumCommandExecutor.java:165)
-java.util.Optional.orElseGet(Unknown Source)
-com.qaprosoft.carina.core.foundation.webdriver.listener.EventFiringAppiumCommandExecutor.execute(EventFiringAppiumCommandExecutor.java:165)
-org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:323)
-org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
-io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:86)
-io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:84)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.impl.MobileFactory.create(MobileFactory.java:167)
-com.qaprosoft.carina.core.foundation.webdriver.core.factory.DriverFactory.create(DriverFactory.java:71)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.createDriver(IDriverPool.java:353)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:143)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:78)
-com.qaprosoft.carina.core.foundation.webdriver.IDriverPool.getDriver(IDriverPool.java:66)
-com.qaprosoft.carina.demo.WebSampleTest.testNewsSearch(WebSampleTest.java:99)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:45:02 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-21 14:45:02 Messager [INFO] RESULT #1: TEST [Default test - testCompareModels] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598085319/a0bfc248-3dfd-400b-891b-425a33b5e623/test.log]
-2020-01-21 14:45:02 Messager [INFO] RESULT #2: TEST [GSMA0001 - Default test - testModelSpecs] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598085319/9d30746e-4983-4606-ae30-1879336b2c58/test.log]
-2020-01-21 14:45:02 Messager [INFO] RESULT #3: TEST [GSMA0002 - Default test - testModelSpecs] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598085319/51e383c1-66c3-44f8-b5fe-b6334e07cd70/test.log]
-2020-01-21 14:45:02 Messager [INFO] RESULT #4: TEST [GSMA0003 - Default test - testModelSpecs] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598085319/c2b8b413-0756-4e9c-a451-d0a6443bfa57/test.log]
-2020-01-21 14:45:02 Messager [INFO] RESULT #5: TEST [Default test - testNewsSearch] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598085319/568ccd5c-0b2d-4c2c-a5dd-c77f319708e0/test.log]
-2020-01-21 14:48:10 CarinaListener [INFO] 
+2020-01-22 12:30:14 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 12:30:14 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 12:30:17 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 12:32:42 CarinaListener [INFO] 
 ============= Test configuration =============
 url=https://www.gsmarena.com
 env=DEMO
@@ -936,58 +241,97 @@ capabilities.platformName=ANDROID
 capabilities.deviceType=phone
 ================================================
 
-2020-01-21 14:48:10 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-21 14:48:10 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-21 14:48:10 Messager [INFO]  TEST [Default test - testCompareModels] STARTED at [14:48:10 2020-01-21]
-2020-01-21 14:48:22 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:48:45 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:48:49 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:48:58 DriverListener [INFO] PASS: element 'compareLink' is clicked.
-2020-01-21 14:49:00 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:02 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:49:04 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:05 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:49:07 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:49:10 DriverListener [INFO] PASS: keys 'Samsung Galaxy J3' are sent to element 'inputField'.
-2020-01-21 14:49:12 PerfEventHandler [INFO] Text 'Samsung Galaxy J3' typed
-2020-01-21 14:49:19 DriverListener [INFO] PASS: element 'Samsung Galaxy J3 (2016)' is clicked.
-2020-01-21 14:49:21 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:25 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:49:27 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:29 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:49:31 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:49:33 DriverListener [INFO] PASS: keys 'Samsung Galaxy J5' are sent to element 'inputField'.
-2020-01-21 14:49:35 PerfEventHandler [INFO] Text 'Samsung Galaxy J5' typed
-2020-01-21 14:49:42 DriverListener [INFO] PASS: element 'Samsung Galaxy J5' is clicked.
-2020-01-21 14:49:44 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:48 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:49:50 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:49:52 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:49:54 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:49:57 DriverListener [INFO] PASS: keys 'Samsung Galaxy J7 Pro' are sent to element 'inputField'.
-2020-01-21 14:49:59 PerfEventHandler [INFO] Text 'Samsung Galaxy J7 Pro' typed
-2020-01-21 14:50:07 DriverListener [INFO] PASS: element 'Samsung Galaxy J7 Pro' is clicked.
-2020-01-21 14:50:09 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:50:12 Messager [INFO]  TEST [Default test - testCompareModels] PASSED at [14:50:12 2020-01-21]
-2020-01-21 14:50:14 Messager [INFO]  TEST [GSMA0001 - Default test - testModelSpecs] STARTED at [14:50:14 2020-01-21]
-2020-01-21 14:50:17 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:50:30 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:50:32 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:50:55 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 14:50:58 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 14:50:59 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 14:51:09 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 14:51:12 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:51:39 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 14:51:41 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:51:46 Messager [ERROR]  TEST [GSMA0001 - Default test - testModelSpecs] FAILED at [14:51:46 2020-01-21] - Invalid ram info! expected [12GB RAM] but found [8/12GB RAM]
+2020-01-22 12:32:43 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 12:32:43 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 12:32:45 Messager [INFO]  TEST [Default test [SC=01] - qeeperLogin] STARTED at [12:32:45 2020-01-22]
+2020-01-22 12:32:46 AbstractApiMethodV2 [INFO] Base properties loaded: api/qeeper/login.properties
+2020-01-22 12:32:46 PlaceholderResolver [WARN] Value not resolved by key: DEMO.username
+2020-01-22 12:32:46 PlaceholderResolver [WARN] Value not resolved by key: DEMO.password
+2020-01-22 12:32:52 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+{
+    "username": "{username}",
+    "password": "{password}"
+}
+HTTP/1.1 401 Unauthorized
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 07:02:51 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
 
-org.testng.Assert.fail(Assert.java:96)
-org.testng.Assert.failNotEquals(Assert.java:776)
-org.testng.Assert.assertEqualsImpl(Assert.java:137)
-org.testng.Assert.assertEquals(Assert.java:118)
-org.testng.Assert.assertEquals(Assert.java:453)
-com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:70)
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Unauthorized",
+    "status": 401,
+    "detail": "Bad credentials",
+    "path": "/api/authenticate",
+    "message": "error.http.401"
+}
+
+2020-01-22 12:32:52 Messager [ERROR]  TEST [Default test [SC=01] - qeeperLogin] FAILED at [12:32:52 2020-01-22] - 2 expectations failed.
+Expected status code <200> doesn't match actual status code <401>.
+
+Expected status line a string containing "OK" doesn't match actual status line "HTTP/1.1 401 Unauthorized".
+
+
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+java.lang.reflect.Constructor.newInstance(Unknown Source)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1597)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:42)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:201)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:98)
+com.tatadigital.training.APIQeeperTest.qeeperLogin(APIQeeperTest.java:21)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -995,93 +339,17 @@ java.lang.reflect.Method.invoke(Unknown Source)
 org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:51:47 Messager [INFO]  TEST [GSMA0002 - Default test - testModelSpecs] STARTED at [14:51:47 2020-01-21]
-2020-01-21 14:51:50 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:52:00 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:52:03 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:52:26 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 14:52:29 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 14:52:29 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 14:52:34 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 14:52:37 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:53:00 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 14:53:02 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:53:06 Messager [INFO]  TEST [GSMA0002 - Default test - testModelSpecs] PASSED at [14:53:06 2020-01-21]
-2020-01-21 14:53:06 Messager [INFO]  TEST [GSMA0003 - Default test - testModelSpecs] STARTED at [14:53:06 2020-01-21]
-2020-01-21 14:53:09 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:53:15 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:53:18 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:53:41 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 14:53:44 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 14:53:44 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 14:53:49 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 14:53:52 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:54:09 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 14:54:12 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:54:15 Messager [INFO]  TEST [GSMA0003 - Default test - testModelSpecs] PASSED at [14:54:15 2020-01-21]
-2020-01-21 14:54:15 Messager [INFO]  TEST [Default test - testNewsSearch] STARTED at [14:54:15 2020-01-21]
-2020-01-21 14:54:18 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:54:29 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:54:31 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:54:40 DriverListener [INFO] PASS: element 'newsLink' is clicked.
-2020-01-21 14:54:42 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:55:04 DriverHelper [WARN] Actual URL differs from expected one. Expected 'https://qkm1.qualitykiosk.com/api/news.php3' but found 'https://www.gsmarena.com/news.php3'
-2020-01-21 14:55:07 Messager [ERROR]  TEST [Default test - testNewsSearch] FAILED at [14:55:07 2020-01-21] - News page is not opened! expected [true] but found [false]
-
-org.testng.Assert.fail(Assert.java:96)
-org.testng.Assert.failNotEquals(Assert.java:776)
-org.testng.Assert.assertTrue(Assert.java:44)
-com.qaprosoft.carina.demo.WebSampleTest.testNewsSearch(WebSampleTest.java:104)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:55:07 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-21 14:55:07 Messager [INFO] RESULT #1: TEST [Default test - testCompareModels] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/1f62013b-27b2-4e8a-be28-1cc6bf5041d5/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/1f62013b-27b2-4e8a-be28-1cc6bf5041d5/test.log]
-2020-01-21 14:55:07 Messager [INFO] RESULT #2: TEST [GSMA0001 - Default test - testModelSpecs] FAIL [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/aff013f9-4dbe-4fbe-85e5-483989ad161f/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/aff013f9-4dbe-4fbe-85e5-483989ad161f/test.log]
-2020-01-21 14:55:07 Messager [INFO] RESULT #3: TEST [GSMA0002 - Default test - testModelSpecs] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/03e79313-32bc-4c7e-9589-161492a1e1eb/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/03e79313-32bc-4c7e-9589-161492a1e1eb/test.log]
-2020-01-21 14:55:07 Messager [INFO] RESULT #4: TEST [GSMA0003 - Default test - testModelSpecs] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/433ddf36-27f6-4fb5-90bd-cf42ba2cf300/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/433ddf36-27f6-4fb5-90bd-cf42ba2cf300/test.log]
-2020-01-21 14:55:07 Messager [INFO] RESULT #5: TEST [Default test - testNewsSearch] FAIL [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/c361b279-0dda-44e5-a2ef-bc476e33a7ae/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598290517/c361b279-0dda-44e5-a2ef-bc476e33a7ae/test.log]
-2020-01-21 14:55:57 CarinaListener [INFO] 
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+2020-01-22 12:32:52 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 12:32:52 Messager [INFO] RESULT #1: TEST [Default test [SC=01] - qeeperLogin] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579676563126/6f9e0e55-5f72-42bc-9dda-abeaa47b1549/test.log]
+2020-01-22 12:34:48 CarinaListener [INFO] 
 ============= Test configuration =============
 url=https://www.gsmarena.com
 env=DEMO
@@ -1201,58 +469,95 @@ capabilities.platformName=ANDROID
 capabilities.deviceType=phone
 ================================================
 
-2020-01-21 14:55:58 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-21 14:55:58 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-21 14:55:58 Messager [INFO]  TEST [Default test - testCompareModels] STARTED at [14:55:58 2020-01-21]
-2020-01-21 14:56:04 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:56:16 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:56:19 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:56:26 DriverListener [INFO] PASS: element 'compareLink' is clicked.
-2020-01-21 14:56:28 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:56:31 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:56:33 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:56:35 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:56:37 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:56:40 DriverListener [INFO] PASS: keys 'Samsung Galaxy J3' are sent to element 'inputField'.
-2020-01-21 14:56:41 PerfEventHandler [INFO] Text 'Samsung Galaxy J3' typed
-2020-01-21 14:56:48 DriverListener [INFO] PASS: element 'Samsung Galaxy J3 (2016)' is clicked.
-2020-01-21 14:56:51 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:56:54 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:56:56 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:56:58 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:57:00 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:57:03 DriverListener [INFO] PASS: keys 'Samsung Galaxy J5' are sent to element 'inputField'.
-2020-01-21 14:57:04 PerfEventHandler [INFO] Text 'Samsung Galaxy J5' typed
-2020-01-21 14:57:11 DriverListener [INFO] PASS: element 'Samsung Galaxy J5' is clicked.
-2020-01-21 14:57:13 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:57:17 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 14:57:19 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:57:22 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 14:57:24 PerfEventHandler [INFO] Text '' typed
-2020-01-21 14:57:26 DriverListener [INFO] PASS: keys 'Samsung Galaxy J7 Pro' are sent to element 'inputField'.
-2020-01-21 14:57:28 PerfEventHandler [INFO] Text 'Samsung Galaxy J7 Pro' typed
-2020-01-21 14:57:35 DriverListener [INFO] PASS: element 'Samsung Galaxy J7 Pro' is clicked.
-2020-01-21 14:57:37 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:57:40 Messager [INFO]  TEST [Default test - testCompareModels] PASSED at [14:57:40 2020-01-21]
-2020-01-21 14:57:42 Messager [INFO]  TEST [GSMA0001 - Default test - testModelSpecs] STARTED at [14:57:42 2020-01-21]
-2020-01-21 14:57:45 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:57:54 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:57:56 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:58:18 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 14:58:22 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 14:58:22 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 14:58:29 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 14:58:32 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:58:56 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 14:58:58 PerfEventHandler [INFO] Element clicked
-2020-01-21 14:59:03 Messager [ERROR]  TEST [GSMA0001 - Default test - testModelSpecs] FAILED at [14:59:03 2020-01-21] - Invalid ram info! expected [12GB RAM] but found [8/12GB RAM]
+2020-01-22 12:34:49 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 12:34:49 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 12:34:51 Messager [INFO]  TEST [Default test [SC=01] - qeeperLogin] STARTED at [12:34:51 2020-01-22]
+2020-01-22 12:34:52 AbstractApiMethodV2 [INFO] Base properties loaded: api/qeeper/login.properties
+2020-01-22 12:34:56 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+{
+    "username": "{username}",
+    "password": "{password}"
+}
+HTTP/1.1 401 Unauthorized
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 07:04:56 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
 
-org.testng.Assert.fail(Assert.java:96)
-org.testng.Assert.failNotEquals(Assert.java:776)
-org.testng.Assert.assertEqualsImpl(Assert.java:137)
-org.testng.Assert.assertEquals(Assert.java:118)
-org.testng.Assert.assertEquals(Assert.java:453)
-com.qaprosoft.carina.demo.WebSampleTest.testModelSpecs(WebSampleTest.java:70)
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Unauthorized",
+    "status": 401,
+    "detail": "Bad credentials",
+    "path": "/api/authenticate",
+    "message": "error.http.401"
+}
+
+2020-01-22 12:34:56 Messager [ERROR]  TEST [Default test [SC=01] - qeeperLogin] FAILED at [12:34:56 2020-01-22] - 2 expectations failed.
+Expected status code <200> doesn't match actual status code <401>.
+
+Expected status line a string containing "OK" doesn't match actual status line "HTTP/1.1 401 Unauthorized".
+
+
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+java.lang.reflect.Constructor.newInstance(Unknown Source)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1597)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:42)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:201)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:98)
+com.tatadigital.training.APIQeeperTest.qeeperLogin(APIQeeperTest.java:21)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1260,93 +565,17 @@ java.lang.reflect.Method.invoke(Unknown Source)
 org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
 org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
 org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 14:59:03 Messager [INFO]  TEST [GSMA0002 - Default test - testModelSpecs] STARTED at [14:59:03 2020-01-21]
-2020-01-21 14:59:06 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 14:59:16 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 14:59:19 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 14:59:42 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 14:59:45 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 14:59:45 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 14:59:51 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 14:59:53 PerfEventHandler [INFO] Element clicked
-2020-01-21 15:00:17 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 15:00:19 PerfEventHandler [INFO] Element clicked
-2020-01-21 15:00:23 Messager [INFO]  TEST [GSMA0002 - Default test - testModelSpecs] PASSED at [15:00:23 2020-01-21]
-2020-01-21 15:00:23 Messager [INFO]  TEST [GSMA0003 - Default test - testModelSpecs] STARTED at [15:00:23 2020-01-21]
-2020-01-21 15:00:26 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 15:00:37 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 15:00:39 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 15:01:01 HomePage [INFO] selecting 'Samsung' brand...
-2020-01-21 15:01:04 HomePage [INFO] currentBrand: PHONE FINDER
-2020-01-21 15:01:04 HomePage [INFO] currentBrand: SAMSUNG
-2020-01-21 15:01:11 DriverListener [INFO] PASS: element 'SAMSUNG' is clicked.
-2020-01-21 15:01:14 PerfEventHandler [INFO] Element clicked
-2020-01-21 15:01:31 DriverListener [INFO] PASS: element 'modelLink' is clicked.
-2020-01-21 15:01:34 PerfEventHandler [INFO] Element clicked
-2020-01-21 15:01:38 Messager [INFO]  TEST [GSMA0003 - Default test - testModelSpecs] PASSED at [15:01:38 2020-01-21]
-2020-01-21 15:01:38 Messager [INFO]  TEST [Default test - testNewsSearch] STARTED at [15:01:38 2020-01-21]
-2020-01-21 15:01:41 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 15:01:53 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 15:01:56 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 15:02:05 DriverListener [INFO] PASS: element 'newsLink' is clicked.
-2020-01-21 15:02:07 PerfEventHandler [INFO] Element clicked
-2020-01-21 15:02:29 DriverHelper [WARN] Actual URL differs from expected one. Expected 'https://qkm1.qualitykiosk.com/api/news.php3' but found 'https://www.gsmarena.com/news.php3'
-2020-01-21 15:02:31 Messager [ERROR]  TEST [Default test - testNewsSearch] FAILED at [15:02:31 2020-01-21] - News page is not opened! expected [true] but found [false]
-
-org.testng.Assert.fail(Assert.java:96)
-org.testng.Assert.failNotEquals(Assert.java:776)
-org.testng.Assert.assertTrue(Assert.java:44)
-com.qaprosoft.carina.demo.WebSampleTest.testNewsSearch(WebSampleTest.java:104)
-sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-java.lang.reflect.Method.invoke(Unknown Source)
-org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-org.testng.TestRunner.privateRun(TestRunner.java:648)
-org.testng.TestRunner.run(TestRunner.java:505)
-org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-org.testng.SuiteRunner.run(SuiteRunner.java:364)
-org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-org.testng.TestNG.runSuites(TestNG.java:1049)
-org.testng.TestNG.run(TestNG.java:1017)
-org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-2020-01-21 15:02:31 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-21 15:02:31 Messager [INFO] RESULT #1: TEST [Default test - testCompareModels] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/81deb328-35d1-473f-be86-e0a575290e5f/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/81deb328-35d1-473f-be86-e0a575290e5f/test.log]
-2020-01-21 15:02:31 Messager [INFO] RESULT #2: TEST [GSMA0001 - Default test - testModelSpecs] FAIL [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/aecb1b63-87c4-4a70-b04a-cb66feca592f/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/aecb1b63-87c4-4a70-b04a-cb66feca592f/test.log]
-2020-01-21 15:02:31 Messager [INFO] RESULT #3: TEST [GSMA0002 - Default test - testModelSpecs] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/5b7f65fc-1256-4290-8e64-d14ac2d8cd5e/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/5b7f65fc-1256-4290-8e64-d14ac2d8cd5e/test.log]
-2020-01-21 15:02:31 Messager [INFO] RESULT #4: TEST [GSMA0003 - Default test - testModelSpecs] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/17408442-eb86-48aa-8063-0b63c899f461/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/17408442-eb86-48aa-8063-0b63c899f461/test.log]
-2020-01-21 15:02:31 Messager [INFO] RESULT #5: TEST [Default test - testNewsSearch] FAIL [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/f3b0fef0-7901-4ef3-b26b-3ed23bbb2b32/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579598758158/f3b0fef0-7901-4ef3-b26b-3ed23bbb2b32/test.log]
-2020-01-21 18:31:43 CarinaListener [INFO] 
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+2020-01-22 12:34:57 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 12:34:57 Messager [INFO] RESULT #1: TEST [Default test [SC=01] - qeeperLogin] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579676689056/c9f867c3-6a71-4854-96e8-2c9c1e2d103d/test.log]
+2020-01-22 12:37:20 CarinaListener [INFO] 
 ============= Test configuration =============
 url=https://www.gsmarena.com
 env=DEMO
@@ -1466,52 +695,11 @@ capabilities.platformName=ANDROID
 capabilities.deviceType=phone
 ================================================
 
-2020-01-21 18:31:44 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-21 18:31:44 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-21 18:31:50 Messager [INFO]  TEST [Default test - testOpenPage] STARTED at [18:31:50 2020-01-21]
-2020-01-21 18:31:50 Messager [INFO] INFO: url 'https://www.gsmarena.com' is being opened...
-2020-01-21 18:32:01 DriverListener [INFO] INFO: url 'https://www.gsmarena.com' is opened.
-2020-01-21 18:32:05 PerfEventHandler [INFO] URL 'https://www.gsmarena.com' opened
-2020-01-21 18:32:06 Messager [INFO]  TEST [Default test - testOpenPage] PASSED at [18:32:06 2020-01-21]
-2020-01-21 18:32:06 Messager [INFO]  TEST [Default test - testOpenCompare] STARTED at [18:32:06 2020-01-21]
-2020-01-21 18:32:09 DriverListener [INFO] PASS: element 'compareLink' is clicked.
-2020-01-21 18:32:10 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:32:12 Messager [INFO]  TEST [Default test - testOpenCompare] PASSED at [18:32:12 2020-01-21]
-2020-01-21 18:32:12 Messager [INFO]  TEST [Default test - testReadSpecs] STARTED at [18:32:12 2020-01-21]
-2020-01-21 18:32:13 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 18:32:15 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:32:17 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 18:32:19 PerfEventHandler [INFO] Text '' typed
-2020-01-21 18:32:21 DriverListener [INFO] PASS: keys 'Samsung Galaxy J3' are sent to element 'inputField'.
-2020-01-21 18:32:23 PerfEventHandler [INFO] Text 'Samsung Galaxy J3' typed
-2020-01-21 18:32:29 DriverListener [INFO] PASS: element 'Samsung Galaxy J3 (2016)' is clicked.
-2020-01-21 18:32:31 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:32:35 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 18:32:37 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:32:39 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 18:32:40 PerfEventHandler [INFO] Text '' typed
-2020-01-21 18:32:42 DriverListener [INFO] PASS: keys 'Samsung Galaxy J5' are sent to element 'inputField'.
-2020-01-21 18:32:44 PerfEventHandler [INFO] Text 'Samsung Galaxy J5' typed
-2020-01-21 18:32:51 DriverListener [INFO] PASS: element 'Samsung Galaxy J5' is clicked.
-2020-01-21 18:32:53 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:32:56 DriverListener [INFO] PASS: element 'inputField' is clicked.
-2020-01-21 18:32:58 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:33:00 DriverListener [INFO] PASS: keys cleared in element 'inputField'.
-2020-01-21 18:33:01 PerfEventHandler [INFO] Text '' typed
-2020-01-21 18:33:03 DriverListener [INFO] PASS: keys 'Samsung Galaxy J7 Pro' are sent to element 'inputField'.
-2020-01-21 18:33:05 PerfEventHandler [INFO] Text 'Samsung Galaxy J7 Pro' typed
-2020-01-21 18:33:11 DriverListener [INFO] PASS: element 'Samsung Galaxy J7 Pro' is clicked.
-2020-01-21 18:33:13 PerfEventHandler [INFO] Element clicked
-2020-01-21 18:33:16 Messager [INFO]  TEST [Default test - testReadSpecs] PASSED at [18:33:16 2020-01-21]
-2020-01-21 18:33:16 Messager [INFO]  TEST [Default test - testCompareModels] STARTED at [18:33:16 2020-01-21]
-2020-01-21 18:33:16 Messager [INFO]  TEST [Default test - testCompareModels] PASSED at [18:33:16 2020-01-21]
-2020-01-21 18:33:16 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-21 18:33:16 Messager [INFO] RESULT #1: TEST [Default test - testOpenPage] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/eb853ec7-084f-4d6c-86c2-53a5631387c9/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/eb853ec7-084f-4d6c-86c2-53a5631387c9/test.log]
-2020-01-21 18:33:16 Messager [INFO] RESULT #2: TEST [Default test - testOpenCompare] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/f5953688-3f56-4034-99bd-c20cc4847bc3/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/f5953688-3f56-4034-99bd-c20cc4847bc3/test.log]
-2020-01-21 18:33:16 Messager [INFO] RESULT #3: TEST [Default test - testReadSpecs] PASS [screenshots=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/4a4c5644-c803-4f67-8fd8-d4dc65e1b000/report.html | log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/4a4c5644-c803-4f67-8fd8-d4dc65e1b000/test.log]
-2020-01-21 18:33:16 Messager [INFO] RESULT #4: TEST [Default test - testCompareModels] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579611704537/f71db563-a43c-4510-b2e7-a3a1f3987b15/test.log]
-2020-01-21 18:33:17 CarinaListener$ShutdownHook [WARN] Trying to quit driver 'default' on shutdown hook action!
-2020-01-21 18:42:05 CarinaListener [INFO] 
+2020-01-22 12:37:21 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 12:37:21 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 12:37:23 Messager [INFO]  TEST [Default test [SC=01] - qeeperLogin] STARTED at [12:37:23 2020-01-22]
+2020-01-22 12:37:25 AbstractApiMethodV2 [INFO] Base properties loaded: api/qeeper/login.properties
+2020-01-22 13:54:26 CarinaListener [INFO] 
 ============= Test configuration =============
 url=https://www.gsmarena.com
 env=DEMO
@@ -1631,10 +819,236 @@ capabilities.platformName=ANDROID
 capabilities.deviceType=phone
 ================================================
 
-2020-01-21 18:42:06 CarinaListener [INFO] Set data_provider_thread_count=1
-2020-01-21 18:42:06 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
-2020-01-21 18:42:07 Messager [INFO]  TEST [Default test - feature] STARTED at [18:42:07 2020-01-21]
-2020-01-21 18:42:15 AbstractApiMethod [INFO] Request method:	POST
+2020-01-22 13:54:27 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 13:54:27 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 13:54:28 Messager [INFO]  TEST [Default test [SC=01] - qeeperLogin] STARTED at [13:54:28 2020-01-22]
+2020-01-22 13:54:30 AbstractApiMethodV2 [INFO] Base properties loaded: api/qeeper/login.properties
+2020-01-22 13:54:34 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+{
+    "username": "{username}",
+    "password": "{password}"
+}
+HTTP/1.1 401 Unauthorized
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 08:24:34 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
+
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Unauthorized",
+    "status": 401,
+    "detail": "Bad credentials",
+    "path": "/api/authenticate",
+    "message": "error.http.401"
+}
+
+2020-01-22 13:54:34 Messager [ERROR]  TEST [Default test [SC=01] - qeeperLogin] FAILED at [13:54:34 2020-01-22] - 2 expectations failed.
+Expected status code <200> doesn't match actual status code <401>.
+
+Expected status line a string containing "OK" doesn't match actual status line "HTTP/1.1 401 Unauthorized".
+
+
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+java.lang.reflect.Constructor.newInstance(Unknown Source)
+org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:598)
+com.jayway.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+com.jayway.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1597)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:93)
+groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1210)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1019)
+groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:810)
+com.jayway.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
+org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
+org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
+org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy:164)
+com.jayway.restassured.internal.RequestSpecificationImpl.post(RequestSpecificationImpl.groovy)
+com.qaprosoft.carina.core.foundation.api.http.HttpClient.send(HttpClient.java:42)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethod.callAPI(AbstractApiMethod.java:201)
+com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2.callAPI(AbstractApiMethodV2.java:98)
+com.tatadigital.training.APIQeeperTest.qeeperLogin(APIQeeperTest.java:21)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:71)
+org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+java.util.concurrent.FutureTask.run(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+java.lang.Thread.run(Unknown Source)
+2020-01-22 13:54:35 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 13:54:35 Messager [INFO] RESULT #1: TEST [Default test [SC=01] - qeeperLogin] FAIL [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579681466693/f49cf268-1273-4afa-97eb-052731496a94/test.log]
+2020-01-22 13:58:05 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 13:58:05 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 13:58:05 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 13:58:06 Messager [INFO]  TEST [Default test - feature] STARTED at [13:58:06 2020-01-22]
+2020-01-22 13:58:12 AbstractApiMethod [INFO] Request method:	POST
 Request path:	https://reqres.in/api/users
 Proxy:			<none>
 Request params:	name=sample
@@ -1648,11 +1062,11 @@ Headers:		Accept=*/*
 Cookies:		<none>
 Body:			<none>
 HTTP/1.1 400 Bad Request
-Date: Tue, 21 Jan 2020 13:12:13 GMT
+Date: Wed, 22 Jan 2020 08:28:11 GMT
 Content-Type: text/html; charset=utf-8
 Transfer-Encoding: chunked
 Connection: keep-alive
-Set-Cookie: __cfduid=d8813939340733f9e3da8b55d24c9e42f1579612333; expires=Thu, 20-Feb-20 13:12:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+Set-Cookie: __cfduid=d317e77ed4073d506a24a62eddc201e921579681691; expires=Fri, 21-Feb-20 08:28:11 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 X-Powered-By: Express
 Content-Security-Policy: default-src 'self'
 X-Content-Type-Options: nosniff
@@ -1660,7 +1074,7 @@ Via: 1.1 vegur
 CF-Cache-Status: DYNAMIC
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
-CF-RAY: 558989dbcb4fdcd6-SIN
+CF-RAY: 55902728fcd3d994-SIN
 
 <html lang="en">
   <head>
@@ -1672,8 +1086,1178 @@ CF-RAY: 558989dbcb4fdcd6-SIN
   </body>
 </html>
 
-2020-01-21 18:42:15 Messager [INFO]  TEST [Default test - feature] PASSED at [18:42:15 2020-01-21]
-2020-01-21 18:42:15 CucumberRunner [INFO] In  @AfterClass tearDownClass
-2020-01-21 18:42:15 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
-2020-01-21 18:42:19 Messager [INFO] INFO: '**************** Test execution summary ****************'.
-2020-01-21 18:42:19 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579612326070/7af620eb-3e30-466c-a84b-8f9afe288ebf/test.log]
+2020-01-22 13:58:12 Messager [INFO]  TEST [Default test - feature] PASSED at [13:58:12 2020-01-22]
+2020-01-22 13:58:12 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 13:58:13 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 13:58:16 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 13:58:16 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579681685557/a2c541ca-064f-40a4-a3ce-b9de691d144c/test.log]
+2020-01-22 13:59:23 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 13:59:23 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 13:59:23 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 13:59:24 Messager [INFO]  TEST [Default test - feature] STARTED at [13:59:24 2020-01-22]
+2020-01-22 13:59:30 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	name=sample
+				job=test
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 22 Jan 2020 08:29:29 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=db0668a000dae4dee7f10405b46ea0d131579681768; expires=Fri, 21-Feb-20 08:29:28 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5590290f29b4dcc6-SIN
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Bad Request</pre>
+  </body>
+</html>
+
+2020-01-22 13:59:30 Messager [INFO]  TEST [Default test - feature] PASSED at [13:59:30 2020-01-22]
+2020-01-22 13:59:30 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 13:59:30 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 13:59:32 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 13:59:32 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579681763506/44982cb8-33c2-42ef-a75e-3b728c80adcb/test.log]
+2020-01-22 15:19:30 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 15:19:31 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 15:19:31 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 15:19:31 Messager [INFO]  TEST [Default test - feature] STARTED at [15:19:31 2020-01-22]
+2020-01-22 15:19:37 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	name=sample
+				job=test
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Date: Wed, 22 Jan 2020 09:49:36 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d3da3c842121ed27a639a31f6b92311411579686575; expires=Fri, 21-Feb-20 09:49:35 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 55909e69ef18ddf1-SIN
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Bad Request</pre>
+  </body>
+</html>
+
+2020-01-22 15:19:37 Messager [INFO]  TEST [Default test - feature] PASSED at [15:19:37 2020-01-22]
+2020-01-22 15:19:37 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 15:19:37 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 15:19:39 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 15:19:39 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579686570833/348ca1fc-19cc-4f37-9898-a434ff06c069/test.log]
+2020-01-22 15:20:42 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 15:20:42 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 15:20:42 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 15:20:43 Messager [INFO]  TEST [Default test - feature] STARTED at [15:20:43 2020-01-22]
+2020-01-22 15:20:48 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://reqres.in/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+name=sample&job=test
+HTTP/1.1 400 Bad Request
+Date: Wed, 22 Jan 2020 09:50:47 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=da1248ad582cd6b4718796d2c05cf0d1f1579686647; expires=Fri, 21-Feb-20 09:50:47 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Content-Security-Policy: default-src 'self'
+X-Content-Type-Options: nosniff
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 5590a02a1d55a8fe-SIN
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Error</title>
+  </head>
+  <body>
+    <pre>Bad Request</pre>
+  </body>
+</html>
+
+2020-01-22 15:20:48 Messager [INFO]  TEST [Default test - feature] PASSED at [15:20:48 2020-01-22]
+2020-01-22 15:20:48 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 15:20:49 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 15:20:51 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 15:20:51 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579686642479/6a869bcb-7482-473b-8ab3-28aefb6f773d/test.log]
+2020-01-22 16:03:28 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 16:03:28 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 16:03:28 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 16:03:29 Messager [INFO]  TEST [Default test - feature] STARTED at [16:03:29 2020-01-22]
+2020-01-22 16:03:34 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/users
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+username=admin&password=admin
+HTTP/1.1 401 Unauthorized
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 10:33:33 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
+
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Unauthorized",
+    "status": 401,
+    "detail": "Full authentication is required to access this resource",
+    "path": "/api/users",
+    "message": "error.http.401"
+}
+
+2020-01-22 16:03:34 Messager [INFO]  TEST [Default test - feature] PASSED at [16:03:34 2020-01-22]
+2020-01-22 16:03:34 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 16:03:34 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 16:03:34 CucumberRunner [INFO] Report json: TrainingLogin-test-report.json
+2020-01-22 16:03:36 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 16:03:36 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579689208587/e4787438-d53b-4907-8127-03818e3549d1/test.log]
+2020-01-22 16:04:44 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 16:04:44 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 16:04:44 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 16:04:45 Messager [INFO]  TEST [Default test - feature] STARTED at [16:04:45 2020-01-22]
+2020-01-22 16:04:49 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+username=admin&password=admin
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 10:34:49 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
+
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "JSON parse error: Unrecognized token 'username': was expecting ('true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'username': was expecting ('true', 'false' or 'null')\n at [Source: (PushbackInputStream); line: 1, column: 10]",
+    "path": "/api/authenticate",
+    "message": "error.http.400"
+}
+
+2020-01-22 16:04:50 Messager [INFO]  TEST [Default test - feature] PASSED at [16:04:50 2020-01-22]
+2020-01-22 16:04:50 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 16:04:50 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 16:04:50 CucumberRunner [INFO] Report json: TrainingLogin-test-report.json
+2020-01-22 16:04:52 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 16:04:52 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579689284639/023ea824-de7a-46de-82bb-fe7a01d844c3/test.log]
+2020-01-22 16:08:02 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 16:08:03 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 16:08:03 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 16:08:03 Messager [INFO]  TEST [Default test - feature] STARTED at [16:08:03 2020-01-22]
+2020-01-22 16:08:08 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:
+username=admin&password=admin
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 10:38:08 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
+
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "JSON parse error: Unrecognized token 'username': was expecting ('true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'username': was expecting ('true', 'false' or 'null')\n at [Source: (PushbackInputStream); line: 1, column: 10]",
+    "path": "/api/authenticate",
+    "message": "error.http.400"
+}
+
+2020-01-22 16:08:08 Messager [INFO]  TEST [Default test - feature] PASSED at [16:08:08 2020-01-22]
+2020-01-22 16:08:08 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 16:08:08 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 16:08:08 CucumberRunner [INFO] Report json: TrainingLogin-test-report.json
+2020-01-22 16:08:11 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 16:08:11 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579689482813/2ebcb177-784d-48d6-bbb4-57de6901e013/test.log]
+2020-01-22 16:15:43 CarinaListener [INFO] 
+============= Test configuration =============
+url=https://www.gsmarena.com
+env=DEMO
+env_arg_resolver=com.qaprosoft.carina.core.foundation.utils.DefaultEnvArgResolver
+platform=*
+browser=chrome
+browser_version=*
+browser_language=
+selenium_host=http://localhost:4444/wd/hub
+driver_event_listeners=com.qaprosoft.carina.demo.utils.PerfEventHandler
+max_driver_count=3
+custom_capabilities=
+chrome_args=
+chrome_experimental_opts=
+chrome_mobile_emulation_opts=
+firefox_args=
+firefox_preferences=
+app_version=
+proxy_host=
+proxy_port=
+proxy_protocols=http,https,ftp
+browsermob_proxy=false
+browsermob_host=
+browsermob_port=0
+browsermob_ports_range=
+browsermob_disabled_mitm=false
+proxy_set_to_system=false
+report_url=
+email_list=
+failure_email_list=
+track_known_issues=false
+auto_screenshot=true
+implicit_timeout=10
+explicit_timeout=20
+auto_download=false
+auto_download_apps=
+custom_artifacts_folder=
+retry_interval=5
+project_report_directory=./reports/qa
+max_screen_history=10
+max_log_file_size=150
+result_sorting=true
+big_screen_width=-1
+big_screen_height=-1
+small_screen_width=90
+small_screen_height=60
+init_retry_count=0
+init_retry_interval=1
+retry_count=0
+enable_l10n=true
+l10n_encoding=ISO-8859-1
+locale=en_US
+enable_i18n=true
+language=en_US
+thread_count=1
+data_provider_thread_count=-1
+core_log_level=INFO
+core_log_packages=com.qaprosoft.carina.core
+artifacts_expiration_seconds=2592000
+log_all_json=true
+date_format=HH:mm:ss yyyy-MM-dd
+time_format=HH:mm:ss
+suite_name=
+jira_updater=com.qaprosoft.carina.core.foundation.jira.DefaultJiraUpdater
+jira_url=
+jira_user=
+jira_password=
+jira_suite_id=
+jira_project=
+jira_project_short=
+jira_create_new_ticket=false
+test_naming_pattern={method_name}
+optimize_video_recording=false
+testrail_run_name=
+testrail_milestone=
+testrail_assignee=
+qtest_cycle_name=DailyAutomation
+qtest_suite_name=
+s3_bucket_name=
+access_key_id=
+secret_key=
+s3_use_presign_url=false
+s3_local_storage=.
+appcenter_token=
+appcenter_local_storage=.
+add_new_localization=false
+add_new_localization_encoding=utf-8
+add_new_localization_path=
+add_new_localization_property_name=new_custom_messages_
+tls_keysecure_location=
+health_check_class=
+health_check_methods=
+uninstall_related_apps=false
+default_device_timezone=GMT
+default_device_time_format=24
+default_device_language=en_US
+android_screen_record_size=
+android_screen_record_bitrate=
+android_enable_bug_report=true
+ios_screen_record_quality=MEDIUM
+ios_screen_record_codec=libx264
+ios_screen_record_fps=10
+screen_record_duration=180
+video_scale=-2:720
+ignore_ssl=false
+test_run_rules=
+hub_mode=selenium
+extract_sys_log=false
+selenium_host=http://localhost:4444/wd/hub
+
+------------- Driver capabilities -----------
+capabilities.appPackage=com.solvd.carinademoapplication
+capabilities.appActivity=com.solvd.carinademoapplication.ActivitySplash
+capabilities.automationName=uiautomator2
+capabilities.app=src/main/resources/carinademoexample.apk
+capabilities.platformName=ANDROID
+capabilities.deviceType=phone
+================================================
+
+2020-01-22 16:15:44 CarinaListener [INFO] Set data_provider_thread_count=1
+2020-01-22 16:15:44 CarinaListener [INFO] CARINA_CORE_VERSION: 6.3.30
+2020-01-22 16:15:44 Messager [INFO]  TEST [Default test - feature] STARTED at [16:15:44 2020-01-22]
+2020-01-22 16:15:49 AbstractApiMethod [INFO] Request method:	POST
+Request path:	https://qeeper.herokuapp.com/api/authenticate
+Proxy:			<none>
+Request params:	username=admin
+				password=admin
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Server: Cowboy
+Connection: close
+Expires: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+X-Xss-Protection: 1; mode=block
+Pragma: no-cache
+X-Frame-Options: DENY
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data:
+Date: Wed, 22 Jan 2020 10:45:48 GMT
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Feature-Policy: geolocation 'none'; midi 'none'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'none'; fullscreen 'self'; payment 'none'
+Content-Type: application/problem+json
+Via: 1.1 vegur
+
+{
+    "type": "https://www.jhipster.tech/problem/problem-with-message",
+    "title": "Bad Request",
+    "status": 400,
+    "detail": "JSON parse error: Unrecognized token 'username': was expecting ('true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'username': was expecting ('true', 'false' or 'null')\n at [Source: (PushbackInputStream); line: 1, column: 10]",
+    "path": "/api/authenticate",
+    "message": "error.http.400"
+}
+
+2020-01-22 16:15:49 Messager [INFO]  TEST [Default test - feature] PASSED at [16:15:49 2020-01-22]
+2020-01-22 16:15:49 CucumberRunner [INFO] In  @AfterClass tearDownClass
+2020-01-22 16:15:49 CucumberRunner [INFO] Report json: CreateUserAPI-test-report.json
+2020-01-22 16:15:49 CucumberRunner [INFO] Report json: TrainingLogin-test-report.json
+2020-01-22 16:15:51 Messager [INFO] INFO: '**************** Test execution summary ****************'.
+2020-01-22 16:15:51 Messager [INFO] RESULT #1: TEST [Default test - feature] PASS [log=file://D:\Test\Atlas_Demo-1\.\reports\qa\1579689943709/8d85514b-3796-48fd-a4a0-9b58faaee5de/test.log]
